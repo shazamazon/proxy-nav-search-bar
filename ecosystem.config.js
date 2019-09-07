@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'Proxy-Nav',
-    script: './server/index.js'
+    script: 'server/index.js'
   }],
   deploy: {
     production: {
