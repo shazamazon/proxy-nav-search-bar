@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'Proxy-Nav',
-    script: './server/index.js'
+    script: 'server/index.js'
   }],
   deploy: {
     production: {
@@ -10,7 +10,7 @@ module.exports = {
       key: '~/.ssh/FEC-first-key.pem',
       ref: 'origin/master',
       repo: 'git@github.com:shazamazon/proxy-nav-search-bar.git',
-      path: '/home/ubuntu/',
+      path: '/home/ubuntu',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
